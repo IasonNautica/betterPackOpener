@@ -524,11 +524,11 @@ def foilPrint(list, rarityName):
     """
     if (len(list) > 0):
         print("You pulled " + str(len(list)) + " " + rarityName + "(s): ")
-        for card in list:
-            if (list[len(list) - 1] == card):
-                print(card["name"])
+        for n, card in enumerate(list):
+            if (n == len(list)-1):
+                print(card["name"].rstrip())
             else:
-                print(card["name"], end=", ")
+                print(card["name"].rstrip(), end=", ")
 
 
 def foilCount(cardlist, sepFoils, packName, packNumber, boxRatio, printInfo, pulldir):
