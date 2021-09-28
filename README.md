@@ -27,7 +27,7 @@ Linux users should download the source code and compile/run it themselves.
 
 ## User Guide
 Though I've tried to make the tooltips and titles fairly self explanatory, here follows a small user guide on how to use this program:
-![Main Screen](https://imgur.com/phlqmpP)
+![Main Screen](https://imgur.com/phlqmpP.png)
 **Checkboxes:**
 YDK Output - If checked, prints the files as a YDK file readable by DuelingBook/Edopro/etc in the desired Pulls directory
 Remove Extras -  Only available if YDK Output is checked, removes any copies of a card after the third one from the YDK
@@ -38,15 +38,15 @@ Pack Amount: On the default settings, pulls 24 packs for every set, except Gold 
 
 **Go**: Type a sets' name and select Go to pull it (Alternatively, you can select them from a list if clicking **Select Sets**).
 
-![Select Sets Screen](https://imgur.com/pBgud5i)
+![Select Sets Screen](https://imgur.com/pBgud5i.png)
 **Select Sets:**
 Check whichever sets you want to pull and then click Go on the main window. This disables writing down the pack's name. Be sure not to close the second window if you want to pull from a selection.
 Catch up to draft option should be a few weeks off, so beware.
 
-![Configure Screen](https://imgur.com/NhVMiOr)
+![Configure Screen](https://imgur.com/NhVMiOr.png)
 Where to save your banlists (.lflist.CONF) and pulls (.ydk) files. By default, should point to the current directory's /pulls and /banlist, but not a bad idea to double check this.
 
-![Tools](https://imgur.com/6PK4z5R)
+![Tools](https://imgur.com/6PK4z5R.png)
 **Create Whitelist**: Select one or more ydk files to create a whitelist from. You can use this to create a whitelist fine for Edopro, allowing easy management and deck building. If you want to export this to Edopro, put it in the /repositories/lflists inside Project Ignis' directory.
 
 **Banlist Merger**: Select two .lflist.CONF files to merge. If both of them are hitting the same card, the second one's hit will be preferred over the first.
