@@ -29,11 +29,17 @@ Linux users should download the source code and compile/run it themselves.
 Though I've tried to make the tooltips and titles fairly self explanatory, here follows a small user guide on how to use this program:
 ![Main Screen](https://imgur.com/phlqmpP.png)
 **Checkboxes:**
+
 YDK Output - If checked, prints the files as a YDK file readable by DuelingBook/Edopro/etc in the desired Pulls directory
+
 Remove Extras -  Only available if YDK Output is checked, removes any copies of a card after the third one from the YDK
+
 Box Ratios - Pull as if pulling from a box instead of stray packs (Basically "guarantees" a certain amount of Super/Ultra/Secret Rares depending on the ratios the set has. Only works in core sets)
+
 Visuals: Show your pulls one by one in a graphical interface.
+
 Print pulls: On by default, prints cards to the output window.
+
 Pack Amount: On the default settings, pulls 24 packs for every set, except Gold Series sets (5) and Hidden Arsenal sets (8)
 
 **Go**: Type a sets' name and select Go to pull it (Alternatively, you can select them from a list if clicking **Select Sets**).
