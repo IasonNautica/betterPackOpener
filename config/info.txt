@@ -1,0 +1,2 @@
+PFolder: ./pulls 
+BFolder: ./banlist 
