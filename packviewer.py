@@ -4,6 +4,8 @@ import requests
 import PySimpleGUI as sg
 from io import BytesIO
 
+import draftOpener
+
 
 def image_to_data(im):
     """
@@ -53,6 +55,7 @@ def main(packlist):
                 c += 1
 
         layout[c].append(sg.Button('Next', enable_events=True, key='N'))
+        layout[c].append(sg.Button('Skip Pack', enable_events=True, key='S'))
         layout[c].append(sg.Button('Quit', enable_events=True, key='Q'))
         window = sg.Window('Card Display', layout, finalize=True)
 
@@ -61,11 +64,17 @@ def main(packlist):
             if event == sg.WIN_CLOSED or event == 'Q':
                 quit = True
                 window.close()
+                draftOpener.visualFlag = False
                 break
             if event.startswith('SC-'):
                 split = event.split('-')
                 webbrowser.open('https://db.ygoprodeck.com/card/?search=' + split[1], 2)
             if event == 'N':
+                window.close()
+                break
+            if event == 'S':
+                window.close()
+                quit = True
                 window.close()
                 break
 

@@ -28,15 +28,16 @@ import PySimpleGUI as sg
 # TO"Done"DO: Popup "Done" and close window after Saving on config menu
 # TO"Can't do this"DO: Disable writing in the output box
 # TO"Done"DO: Let user select pack amount
+# TO"Done"DO: Quit halfway through multiple packs
+# TO"Done"DO: Save selection option in the pack select screen
+# TO"Done"DO: Remove packs that aren't out yet
+
 pulldir = ""
 bandir = ""
 SYMBOL_UP = '▲'
 SYMBOL_DOWN = '▼'
+topull = []
 
-
-def showpack(pack):
-    for card, n in enumerate(pack):
-        pass
 
 
 def pullMultiple(packs, writeYdk, trimYdk, writeFoil, ratio, visuals, printInfo, packamount):
@@ -52,6 +53,7 @@ def pullMultiple(packs, writeYdk, trimYdk, writeFoil, ratio, visuals, printInfo,
     :param ratio: Boolean
     """
     getConfigInfo()
+    draftOpener.visualFlag = visuals
     howmany = 0
     if(packamount=="Default"):
         for pack in packs:
@@ -181,8 +183,9 @@ def makeSetWindow():
     layout.insert(0, [
         [sg.Button('Select All', key='-SALL-'), sg.Button('Select None', key='-SNONE-'),
          sg.Button('Catch up to draft', key='-SDRAFT-'), sg.Button('Exit', key='-SEXIT-')]])
+    layout.append([sg.Button('Save', key='-SSELECT-')])
 
-    return sg.Window('Sets', layout, finalize=True, location=(0, 50), disable_close=True)
+    return sg.Window('Sets', layout, finalize=True, location=(0, 50))
 
 
 def makeConfigWindow():
@@ -257,6 +260,8 @@ def main():
     """
     Main event loop. Renders the UI elements and handles the inputs
     """
+    global topull
+    topull = []
     writeYdk = False
     trimYdk = False
     writeFoil = False
@@ -301,12 +306,19 @@ def main():
 
                 elif setsWindow:
                     print("Pulling according to selection")
-                    topull = []
+                    topullnow = []
                     for e in setsWindow.element_list():
                         if isinstance(e, sg.Checkbox):
                             if e.get() == True:
-                                topull.append(e.Tooltip)
-                    pullMultiple(topull, window['-YDKOUT-'].get(), window['-REMEXTRA-'].get(), window['-SEPFOIL-'].get(),
+                                topullnow.append(e.Tooltip)
+                    pullMultiple(topullnow, window['-YDKOUT-'].get(), window['-REMEXTRA-'].get(), window['-SEPFOIL-'].get(),
+                                 window['-BOXRAT-'].get(), window['-VISPULLS-'].get(), window['-PRINTPULLS-'].get(),
+                                 values['-PACKAMOUNT-'])
+
+
+                elif bool(topull):
+                    pullMultiple(topull, window['-YDKOUT-'].get(), window['-REMEXTRA-'].get(),
+                                 window['-SEPFOIL-'].get(),
                                  window['-BOXRAT-'].get(), window['-VISPULLS-'].get(), window['-PRINTPULLS-'].get(),
                                  values['-PACKAMOUNT-'])
 
@@ -352,6 +364,15 @@ def main():
                     if isinstance(e, sg.Checkbox):
                         if e.Tooltip in draftOpener.draftSets:
                             e.update(value=True)
+
+            elif event == '-SSELECT-':
+                topull = []
+                for e in setsWindow.element_list():
+                    if isinstance(e, sg.Checkbox):
+                        if e.get() == True:
+                            topull.append(e.Tooltip)
+
+                sg.popup("Done!")
 
             # Config Menu ----
 

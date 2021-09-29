@@ -44,8 +44,8 @@ coreSets = ["Legend of Blue Eyes White Dragon", "Metal Raiders", "Spell Ruler", 
             "Extreme Force", "Flames of Destruction", "Cybernetic Horizon", "Soul Fusion",
             "Savage Strike", "Dark Neostorm", "Rising Rampage", "Chaos Impact",
             "Ignition Assault", "Eternity Code", "Rise of the Duelist", "Phantom Rage",
-            "Blazing Vortex", "Lightning Overdrive", "Dawn of Majesty", "Burst of Destiny",
-            "Battle of Chaos"
+            "Blazing Vortex", "Lightning Overdrive", "Dawn of Majesty"
+            #These two aren't out yet-- , "Burst of Destiny","Battle of Chaos"
             ]
 
 reprintSets = ["Dark Beginning 1", "Dark Beginning 2", "Dark Revelation Volume 1",
@@ -93,6 +93,8 @@ otherSets = ["Ghosts From the Past", "Millenium Pack", "World Superstars"]
 # demo decks: meh
 
 retropack = ["Retro Pack", "Retro Pack 2"]
+
+visualFlag = True
 
 draftSets = ["Legend of Blue Eyes White Dragon", "Metal Raiders", "Spell Ruler", "Pharaoh's Servant",
              "Labyrinth of Nightmare", "Legacy of Darkness", "Pharaonic Guardian", "Magician's Force",
@@ -717,7 +719,7 @@ def main(toOpen, howmany, writeYdk, trimYdk, writeFoil, ratio, visuals, printInf
 
     if (countFoils):
         foilCount(cardlist, sepFoils, packName, packNumber, False, printInfo, pulldir)
-    if (visuals):
+    if (visuals and visualFlag):
         packviewer.main(packlist)
     cleanup(packlist, cardlist)
 
