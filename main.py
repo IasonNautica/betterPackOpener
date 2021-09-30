@@ -31,6 +31,8 @@ import PySimpleGUI as sg
 # TO"Done"DO: Quit halfway through multiple packs
 # TO"Done"DO: Save selection option in the pack select screen
 # TO"Done"DO: Remove packs that aren't out yet
+# TODO: Change font on config window
+# TODO: Add loading screens when using visuals
 
 pulldir = ""
 bandir = ""
@@ -54,9 +56,10 @@ def pullMultiple(packs, writeYdk, trimYdk, writeFoil, ratio, visuals, printInfo,
     """
     getConfigInfo()
     draftOpener.visualFlag = visuals
-    howmany = 0
+    i = 0
     if(packamount=="Default"):
-        for pack in packs:
+        for i, pack in enumerate(packs):
+            sg.one_line_progress_meter('Opening queued packs', i + 1, len(packs))
             if pack in draftOpener.goldSets:
                 howmany = 5
             elif pack in draftOpener.hiddenArset:
