@@ -7,6 +7,7 @@ The main reason why I made this was to have a more accurate pack opener, the mos
 * [Technologies](#technologies)
 * [Download](#download)
 * [User Guide](#userguide)
+* [Feature Requests and Bug Reports](#bugreport)
 
 ## Features
 Pull cards from any of the included sets either as stray packs or as a box.
@@ -65,3 +66,7 @@ Where to save your banlists (.lflist.CONF) and pulls (.ydk) files. By default, s
 
 **Banlist Append**:
 Appends a .ydk file to a banlist one. This is useful for adding some newly pulled cards to your main banlist file. If doing so, don't forget to check the Whitelist box.
+
+## Feature Requests and Bug Reports
+Feel free to do either in the [issues tab](https://github.com/IasonNautica/betterPackOpener/issues). Remember to tag the post correctly as either [Feature Request] or [Bug].
+If reporting a bug, a screenshot of the error code and/or a way to replicate it greatly help.
