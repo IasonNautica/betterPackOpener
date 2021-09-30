@@ -11,11 +11,17 @@ The main reason why I made this was to have a more accurate pack opener, the mos
 
 ## Features
 >Pull cards from any of the included sets either as stray packs or as a box.
+
 >YDK output containing all your files.
+>
 >(WIP) Visual opener using card images from the internet.
+>
 >Create an Edopro whitelist using a YDK file
+>
 >Merge banlist function
+>
 >Make an edopro banlist using a YDK file (Not actually related to pack opening)
+>
 >Append a banlist/whitelist (Useful for adding cards to a banlist file)
 
 ## Technologies
