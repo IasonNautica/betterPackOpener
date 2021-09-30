@@ -31,8 +31,8 @@ import PySimpleGUI as sg
 # TO"Done"DO: Quit halfway through multiple packs
 # TO"Done"DO: Save selection option in the pack select screen
 # TO"Done"DO: Remove packs that aren't out yet
-# TODO: Change font on config window
-# TODO: Add loading screens when using visuals
+# TO"Done"DO: Change font on config window
+# TO"Done"DO: Add loading screens when using visuals
 
 pulldir = ""
 bandir = ""
@@ -148,23 +148,23 @@ def makeToolsWindow():
 
     layout = [[sg.Text('Select the desired function below:')],
               #### Section 1 part ####
-              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-1-', text_color='black', tooltip=tip1),
-               sg.T('Create Whitelist', enable_events=True, text_color='black', k='-TOPENCOLL-1-TEXT', tooltip=tip1)],
+              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-1-', text_color='white', tooltip=tip1),
+               sg.T('Create Whitelist', enable_events=True, text_color='white', k='-TOPENCOLL-1-TEXT', tooltip=tip1)],
               [collapse(section1, '-SEC1-')],
               [sg.T("------------------------------------------------")],
               #### Section 2 part ####
-              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-2-', text_color='black', tooltip=tip2),
-               sg.T('Banlist Merger', enable_events=True, text_color='black', k='-TOPENCOLL-2-TEXT', tooltip=tip2)],
+              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-2-', text_color='white', tooltip=tip2),
+               sg.T('Banlist Merger', enable_events=True, text_color='white', k='-TOPENCOLL-2-TEXT', tooltip=tip2)],
               [collapse(section2, '-SEC2-')],
               [sg.T("------------------------------------------------")],
               #### Section 3 part ####
-              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-3-', text_color='black', tooltip=tip3),
-               sg.T('Banlist Maker', enable_events=True, text_color='black', k='-TOPENCOLL-3-TEXT', tooltip=tip3)],
+              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-3-', text_color='white', tooltip=tip3),
+               sg.T('Banlist Maker', enable_events=True, text_color='white', k='-TOPENCOLL-3-TEXT', tooltip=tip3)],
               [collapse(section3, '-SEC3-')],
               [sg.T("------------------------------------------------")],
               #### Section 4 part ####
-              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-4-', text_color='black', tooltip=tip4),
-               sg.T('Banlist Append', enable_events=True, text_color='black', k='-TOPENCOLL-4-TEXT', tooltip=tip4)],
+              [sg.T(SYMBOL_UP, enable_events=True, k='-TOPENCOLL-4-', text_color='white', tooltip=tip4),
+               sg.T('Banlist Append', enable_events=True, text_color='white', k='-TOPENCOLL-4-TEXT', tooltip=tip4)],
               [collapse(section4, '-SEC4-')],
               [sg.T("------------------------------------------------")],
               [sg.Button('Exit')]]
@@ -183,6 +183,7 @@ def makeSetWindow():
     createChecks(layout, draftOpener.reprintSets, "Reprint Sets", False)
     createChecks(layout, draftOpener.hiddenArset, "Hidden Arsenal", False)
     createChecks(layout, draftOpener.retropack, "Retro packs", False)
+    createChecks(layout, draftOpener.goldSets, "Gold Series", False)
     layout.insert(0, [
         [sg.Button('Select All', key='-SALL-'), sg.Button('Select None', key='-SNONE-'),
          sg.Button('Catch up to draft', key='-SDRAFT-'), sg.Button('Exit', key='-SEXIT-')]])
@@ -269,7 +270,7 @@ def main():
     trimYdk = False
     writeFoil = False
     ratio = False
-    sg.theme("Dark Blue")
+    sg.theme("Dark Blue 2")
 
     opened1, opened2, opened3, opened4 = False, False, False, False
 
