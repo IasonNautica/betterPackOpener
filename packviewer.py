@@ -34,8 +34,9 @@ def main(packlist):
         layout = [[]]
         n = 0
         c = 0
-        for card in pack:
+        for i, card in enumerate(pack):
             # print(card)
+            sg.one_line_progress_meter('Downloading card pictures', i + 1, len(pack))
             url = card['image']
             response = requests.get(url, stream=True)
             response.raw.decode_content = True
