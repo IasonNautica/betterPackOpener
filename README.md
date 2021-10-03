@@ -29,7 +29,7 @@ The UI was made with pythonSimpleGui.
 Pretty much all card information is pulled directly from Ygoprodeck's database.
 
 ## Download
-Get the lastest version at the [release page](https://github.com/IasonNautica/betterPackOpener/releases/tag/v1.0)
+Get the lastest version at the [release page](https://github.com/IasonNautica/betterPackOpener/releases/)
 Linux users should download the source code and compile/run it themselves.
 
 ## User Guide
