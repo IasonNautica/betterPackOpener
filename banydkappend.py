@@ -34,23 +34,29 @@ def main(banlist, ydk, whitelist, dir):
                             d[split[0].strip()] = (d[split[0].strip()][0], d[split[0].strip()][1] + 1)
                     else:
                         d[split[0].strip()] = (t.strip('\n'), 1)
+        print("YDK list:")
+        print(d)
         with open(banlist, 'r') as wfile:
             for line in wfile:
                 if not line.startswith(('#', '!', 'ï»¿', '$')):
-                    v = line.split(" ", 2)
+                    split = line.split(" ", 2)
                     # print(v)
                     t = None
-                    if len(v) > 2:
-                        t = v[2]
+                    if len(split) > 2:
+                        t = split[2]
                     else:
                         t = ""
-                    if int(v[1]) == 0:
-                        d[v[0]] = (t.strip('\n'), int(v[1]))
+                    if int(split[1]) == 0:
+                        d[split[0]] = (t.strip('\n'), int(v[1]))
                     else:
-                        if v[0] in d.keys():
-                            if int(d[split[0].strip()][1]) > int(v[1]):
-                                d[split[0].strip()] = (d[split[0].strip()][0], v[1])
+                        if split[0] in d.keys():
+                            if int(d[split[0].strip()][1]) > int(split[1]):
+                                d[split[0].strip()] = (d[split[0].strip()][0], split[1])
+                        else:
+                            d[split[0].strip()] = (t.strip('\n'), 1)
 
+    print("Banlist list:")
+    print(d)
     dictolist.main(d, dir, ntpath.basename(banlist) + ntpath.basename(ydk) + "-Merged", whitelist)
     return ntpath.basename(banlist) + ntpath.basename(ydk) + "-Merged\nto\n" + dir
 
