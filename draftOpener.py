@@ -80,8 +80,7 @@ goldSets = ["Gold Series", "Gold Series 2009", "Gold Series 3", "Gold Series 4: 
             "Gold Series: Haunted Mine"]
 
 hiddenArset = ["Hidden Arsenal", "Hidden Arsenal 2", "Hidden Arsenal 3", "Hidden Arsenal 4: Trishula's Triumph",
-               "Hidden Arsenal 5: Steelswarm Invasion", "Hidden Arsenal 5: Steelswarm Invasion: Special Edition",
-               "Hidden Arsenal 6: Omega Xyz", "Hidden Arsenal 7: Knight of Stars", "Hidden Arsenal: Special Edition",
+               "Hidden Arsenal 5: Steelswarm Invasion", "Hidden Arsenal 6: Omega Xyz", "Hidden Arsenal 7: Knight of Stars"
                ]
 
 collectorBoxSets = ["Duelist Saga", "Duel Power", "Duel Overload"]
@@ -104,10 +103,11 @@ draftSets = ["Legend of Blue Eyes White Dragon", "Metal Raiders", "Spell Ruler",
              "Cyberdark Impact", "Strike of Neos", "Force of the Breaker", "Tactical Evolution",
              "Gladiator's Assault", "Phantom Darkness", "Light of Destruction", "The Duelist Genesis",
              "Crossroads of Chaos", "Crimson Crisis", "Raging Battle", "Ancient Prophecy",
-             "Stardust Overdrive", "Dark Beginning 1", "Dark Beginning 2", "Dark Revelation Volume 1",
+             "Stardust Overdrive", "Absolute Powerforce", "The Shining Darkness", "Duelist Revolution",
+             "Dark Beginning 1", "Dark Beginning 2", "Dark Revelation Volume 1",
              "Dark Revelation Volume 2", "Dark Revelation Volume 3", "Dark Revelation Volume 4",
-             "Hidden Arsenal", "Gold Series", "Dark Legends", "Retro Pack", "Gold Series 2009",
-             "Retro Pack 2"]
+             "Hidden Arsenal", "Hidden Arsenal 2", "Gold Series", "Dark Legends", "Retro Pack", "Gold Series 2009",
+             "Retro Pack 2", "Gold Series 3"]
 
 debug = False
 
@@ -683,18 +683,18 @@ def main(toOpen, howmany, writeYdk, trimYdk, writeFoil, ratio, visuals, printInf
 
     if write:
         if os.path.isdir(pulldir):
-            if os.path.isfile(pulldir + '/' + packName + "Draft.ydk") or \
+            if os.path.isfile(pulldir + '/' + packName + " Draft.ydk") or \
                     os.path.isfile(
-                        pulldir + '/' + packName + "DraftTrimmed.ydk"):
+                        pulldir + '/' + packName + " DraftTrimmed.ydk"):
                 print("Found deck pulls within files already. Aborting write")
                 write = False
             else:
                 if (trim):
                     f = open(
-                        pulldir + '/' + packName + "DraftTrimmed.ydk",
+                        pulldir + '/' + packName + " DraftTrimmed.ydk",
                         "x")
                 else:
-                    f = open(pulldir + '/' + packName + "Draft.ydk", "x")
+                    f = open(pulldir + '/' + packName + " Draft.ydk", "x")
                 f.write("#Made with IasonPackOpener\n")
                 f.write("#main\n")
         else:
