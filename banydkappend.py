@@ -35,8 +35,7 @@ def main(banlist, ydk, whitelist, dir):
                             d[split[0].strip()] = (d[split[0].strip()][0], d[split[0].strip()][1] + 1)
                     else:
                         d[split[0].strip()] = (t.strip('\n'), 1)
-        print("YDK list:")
-        print(d)
+
         with open(banlist, 'r') as wfile:
             for line in wfile:
                 if not line.startswith(('#', '!', 'ï»¿', '$')):
@@ -56,8 +55,6 @@ def main(banlist, ydk, whitelist, dir):
                         else:
                             d[split[0].strip()] = (t.strip('\n'), split[1])
 
-    print("Banlist list:")
-    print(d)
     dictolist.main(d, dir, ntpath.basename(banlist) + ntpath.basename(ydk) + "-Merged", whitelist)
     return ntpath.basename(banlist) + ntpath.basename(ydk) + "-Merged\nto\n" + dir
 
