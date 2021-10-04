@@ -3,6 +3,7 @@ import os
 
 import dictolist
 
+#TODO: Make this work with multiple files on the ydk slot
 
 def main(banlist, ydk, whitelist, dir):
     """
@@ -47,13 +48,13 @@ def main(banlist, ydk, whitelist, dir):
                     else:
                         t = ""
                     if int(split[1]) == 0:
-                        d[split[0]] = (t.strip('\n'), int(v[1]))
+                        d[split[0]] = (t.strip('\n'), int(split[1]))
                     else:
                         if split[0] in d.keys():
                             if int(d[split[0].strip()][1]) > int(split[1]):
                                 d[split[0].strip()] = (d[split[0].strip()][0], split[1])
                         else:
-                            d[split[0].strip()] = (t.strip('\n'), 1)
+                            d[split[0].strip()] = (t.strip('\n'), split[1])
 
     print("Banlist list:")
     print(d)
