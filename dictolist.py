@@ -69,8 +69,10 @@ def main(d, banlistfolder, banlistname, whitelist):
                         if not code in d:
                             f.write(code + " -1 - " + "umiclone" + "\n")
                     for code in animeexclusive:
-                        f.write(code + " -1 - " + "anime card" + "\n")
+                        if not code in d:
+                            f.write(code + " -1 - " + "anime card" + "\n")
                     for code in rushexclusive:
-                        f.write(code + " -1 - " + "rush card" + "\n")
+                        if not code in d:
+                             f.write(code + " -1 - " + "rush card" + "\n")
         except FileExistsError:
             print("Error, file already exists. Aborting print")
