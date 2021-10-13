@@ -420,8 +420,7 @@ def main():
                 # print(files)
                 # print(bandir)
                 if (values['-S1FILE-'] != ''):
-                    message = whitelistmaker.main(files, bandir)
-                    sg.popup("All done!\nSaved " + message)
+                    whitelistmaker.main(files, bandir)
                 else:
                     sg.popup("Error, invalid path")
 
@@ -431,8 +430,7 @@ def main():
 
                 getConfigInfo()
                 if (os.path.isfile(values['-S2FILE1-']) and os.path.isfile(values['-S2FILE2-'])):
-                    message = banlistappend.main(values['-S2FILE1-'], values['-S2FILE2-'], window['-S2CHECK-'].get(), bandir)
-                    sg.popup("All done!\n Saved " + message)
+                    banlistappend.main(values['-S2FILE1-'], values['-S2FILE2-'], window['-S2CHECK-'].get(), bandir)
                 else:
                     sg.popup("Error, invalid path")
 
@@ -442,8 +440,7 @@ def main():
 
                 getConfigInfo()
                 if (os.path.isfile(values['-S3FILE-'])):
-                    message = banlistmaker.main(bandir, values['-S3FILE-'], values['-S3BMFLAG-'])
-                    sg.popup("All done!\n Saved " + message)
+                    banlistmaker.main(bandir, values['-S3FILE-'], values['-S3BMFLAG-'])
                 else:
                     sg.popup("Error, invalid path")
 
@@ -453,8 +450,7 @@ def main():
 
                 getConfigInfo()
                 if (os.path.isfile(values['-S4FILE1-']) and os.path.isfile(values['-S4FILE2-'])):
-                    message = banydkappend.main(values['-S4FILE1-'], values['-S4FILE2-'], window['-S4CHECK-'].get(), bandir)
-                    sg.popup("All done!\n Saved " + message)
+                    banydkappend.main(values['-S4FILE1-'], values['-S4FILE2-'], window['-S4CHECK-'].get(), bandir)
                 else:
                     sg.popup("Error, invalid path")
     except Exception as e:
