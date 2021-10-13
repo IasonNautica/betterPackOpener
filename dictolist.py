@@ -1,16 +1,18 @@
 import os
-
+import PySimpleGUI as sg
 
 def main(d, banlistfolder, banlistname, whitelist):
     """
-    Makes a banlist file using the dictionary created from one of the previous 2 helper functions
-    (Those being buildRestrict and buildWhitelist)
-    :param d: Dict, the aforementioned dictionary
+    Makes a banlist file using the dictionary created from one of the helper functions
+    :param d: Dict
     :param banlistname: String, The name of the new file
     :param whitelist: Boolean, Whether the banlist is a whitelist or not.
     """
 
-    if (whitelist):
+    text = sg.popup_get_text("Please insert the desired output file's name. (Cancel for default name)", "Filename")
+    if(text != "" and text != None):
+        banlistname = text
+    if (whitelist and (text == "" or text == None)):
         banlistname = "Whitelist" + banlistname
     if os.path.isdir(banlistfolder):
         try:
@@ -74,5 +76,8 @@ def main(d, banlistfolder, banlistname, whitelist):
                     for code in rushexclusive:
                         if not code in d:
                              f.write(code + " -1 - " + "rush card" + "\n")
+            sg.popup("All done!\nSaved " + banlistname + ".lflist.CONF \nto\n" + banlistfolder)
+
         except FileExistsError:
-            print("Error, file already exists. Aborting print")
+            sg.popup("Error, file already exists. Aborting write")
+            print("Error, file already exists. Aborting write")
