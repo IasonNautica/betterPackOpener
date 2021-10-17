@@ -2,12 +2,14 @@
 A Yugioh pack opening alternative made in Python. 
 The main reason why I made this was to have a more accurate pack opener, the most popular one has lots of mistakes and doesn't work as it should. The other reason was to have a pack opener that lets you open 24 packs as if they were a box and not stray packs.
 
+If you're just here for Draft, here's the quickstart guide: https://pastebin.com/wbtuG3XE
+
 ## Table of contents
 * [Features](#features)
 * [Technologies](#technologies)
 * [Download](#download)
-* [User Guide](#userguide)
-* [Feature Requests and Bug Reports](#bugreport)
+* [User Guide](#user-guide)
+* [Feature Requests and Bug Reports](#feature-requests-and-bug-reports)
 
 ## Features
 >Pull cards from any of the included sets either as stray packs or as a box.
