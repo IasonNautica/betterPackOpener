@@ -2,7 +2,7 @@
 A Yugioh pack opening alternative made in Python. 
 The main reason why I made this was to have a more accurate pack opener, the most popular one has lots of mistakes and doesn't work as it should. The other reason was to have a pack opener that lets you open 24 packs as if they were a box and not stray packs.
 
-If you're just here for Draft, here's the quickstart guide: https://pastebin.com/wbtuG3XE
+If you're just here for Draft, here's the [quickstart guide](https://github.com/IasonNautica/betterPackOpener/blob/main/info/quickstart.txt)
 
 ## Table of contents
 * [Features](#features)
