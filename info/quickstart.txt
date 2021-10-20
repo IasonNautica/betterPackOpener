@@ -1,1 +1,17 @@
-
+>go to [release page](https://github.com/IasonNautica/betterPackOpener/releases/)
+>extract somewhere
+>open program, click "Configure Folders", set them to the pulls/banlist folder included in the program's folder or wherever you want (this is just where your stuff will get saved to)
+>Check the "YDK Output" and "Box Ratios" boxes in the main window
+>Click "Select Sets"
+>On the new menu, click "Catch up to draft", then hit Save.
+>click Go
+>you now have all your cardpool inside the pulls folder you chose
+ 
+Optional steps to get to use the Edopro banlist functions.
+To make Edopro show only cards you own
+>main program -> banlist/whitelist tools -> Create Whitelist
+>select all your pull files and then click Go
+>this will shit out a file to your banlist folder. Put it in the edopro ProjectIgnis\repositories\lflists folder
+>then you can access it using edo's deckbuilder
+ 
+The files for the current banlist and the gifts also come bundled with the program by default inside /pulls and /banlist
