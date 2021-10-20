@@ -1,0 +1,19 @@
+             "Legend of Blue Eyes White Dragon", "Metal Raiders", "Spell Ruler", "Pharaoh's Servant",
+             "Labyrinth of Nightmare", "Legacy of Darkness", "Pharaonic Guardian", "Magician's Force",
+             "Dark Crisis", "Invasion of Chaos", "Ancient Sanctuary", "Soul of the Duelist",
+             "Rise of Destiny", "Flaming Eternity", "The Lost Millennium", "Cybernetic Revolution",
+             "Elemental Energy", "Shadow of Infinity", "Enemy of Justice", "Power of the Duelist",
+             "Cyberdark Impact", "Strike of Neos", "Force of the Breaker", "Tactical Evolution",
+             "Gladiator's Assault", "Phantom Darkness", "Light of Destruction", "The Duelist Genesis",
+             "Crossroads of Chaos", "Crimson Crisis", "Raging Battle", "Ancient Prophecy",
+             "Stardust Overdrive", "Absolute Powerforce", "The Shining Darkness", "Duelist Revolution",
+             "Starstrike Blast", "Storms of Ragnarok"
+             
+             "Dark Beginning 1", "Dark Beginning 2", "Dark Revelation Volume 1"
+             "Dark Revelation Volume 2", "Dark Revelation Volume 3", "Dark Revelation Volume 4"
+             
+             "Hidden Arsenal", "Hidden Arsenal 2", "Hidden Arsenal 3"
+             
+             "Gold Series", "Gold Series 2009", "Gold Series 3"
+             
+             "Dark Legends", "Retro Pack", "Retro Pack 2"
