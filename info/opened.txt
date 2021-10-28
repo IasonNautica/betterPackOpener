@@ -9,7 +9,7 @@
              "Gladiator's Assault", "Phantom Darkness", "Light of Destruction", "The Duelist Genesis",
              "Crossroads of Chaos", "Crimson Crisis", "Raging Battle", "Ancient Prophecy",
              "Stardust Overdrive", "Absolute Powerforce", "The Shining Darkness", "Duelist Revolution",
-             "Starstrike Blast", "Storm of Ragnarok"
+             "Starstrike Blast", "Storm of Ragnarok", "Extreme Victory"
              
              "Dark Beginning 1", "Dark Beginning 2", "Dark Revelation Volume 1"
              "Dark Revelation Volume 2", "Dark Revelation Volume 3", "Dark Revelation Volume 4"
@@ -17,7 +17,7 @@
              "Dark Legends", "Retro Pack", "Retro Pack 2"
 
              8 Packs:             
-             "Hidden Arsenal", "Hidden Arsenal 2", "Hidden Arsenal 3"
+             "Hidden Arsenal", "Hidden Arsenal 2", "Hidden Arsenal 3", "Hidden Arsenal 4"
              5 Packs:
              "Gold Series", "Gold Series 2009", "Gold Series 3"
              
