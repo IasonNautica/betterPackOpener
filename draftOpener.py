@@ -684,18 +684,18 @@ def main(toOpen, howmany, writeYdk, trimYdk, writeFoil, ratio, visuals, printInf
 
     if write:
         if os.path.isdir(pulldir):
-            if os.path.isfile(pulldir + '/' + packName + " Draft.ydk") or \
+            if os.path.isfile(pulldir + '/' + packName.replace(':','') + " Draft.ydk") or \
                     os.path.isfile(
-                        pulldir + '/' + packName + " DraftTrimmed.ydk"):
+                        pulldir + '/' + packName.replace(':','') + " DraftTrimmed.ydk"):
                 print("Found deck pulls within files already. Aborting write")
                 write = False
             else:
                 if (trim):
                     f = open(
-                        pulldir + '/' + packName + " DraftTrimmed.ydk",
+                        pulldir + '/' + packName.replace(':','') + " DraftTrimmed.ydk",
                         "x")
                 else:
-                    f = open(pulldir + '/' + packName + " Draft.ydk", "x")
+                    f = open(pulldir + '/' + packName.replace(':','') + " Draft.ydk", "x")
                 f.write("#Made with IasonPackOpener\n")
                 f.write("#main\n")
         else:
