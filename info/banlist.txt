@@ -15,12 +15,13 @@ Arcana Force 0 - The Fool, Dust Tornado, Gorz the Emissary of Darkness, Prideful
 Mind Control, Raigeki Break, Krebons, Gellenduo, Trap Hole, Phoenix Wing Wind Blast, Dark Strike Fighter, Hammer Shot, Ally of Justice Catastor, 
 Jain, Lightsworn Paladin, Psi-Impulse, Skill Drain, Forced Back, Black Rose Dragon, Imperial Custom, Substitoad, Card of Safe Return, 
 Stardust Dragon, Caius the Shadow Monarch, Aqua Madoor, Infernity Break, Brionac, Dragon of the Ice Barrier, Mezuki, Amazoness Village,
-Call of the Haunted, Offering to the Snake Deity, Fiendish Chain, Instant Fusion, Pot of Duality, Great Shogun Shien, Legendary Six Samurai - Shi En, Upstart Goblin
+Call of the Haunted, Offering to the Snake Deity, Fiendish Chain, Instant Fusion, Pot of Duality, Great Shogun Shien, Legendary Six Samurai - Shi En, 
+Upstart Goblin, Granmaster of the Six Samurai, Gozen Match, Gladiator Beast Chariot, Legendary Six Samurai - Mizuho, Shadow-Imprisoning Mirror
 
 Semi:Limit Reverse
 
 Limited: Time Seal, 4-Starred Ladybug of Doom, Ekibyo Drakmord, Night Assailant, Upstart Goblin, Tsukuyomi, Rivalry of Warlords, Doom Dozer, Rush Recklessly, 
-Masked Dragon, Reasoning, Apprentice Magician, Shadow-Imprisoning Mirror, Blackwing - Bora the Spear, Blackwing - Kalut the Moon Shadow
+Masked Dragon, Reasoning, Apprentice Magician, Blackwing - Bora the Spear, Blackwing - Kalut the Moon Shadow
 
 
 Gift:3x Polymerization, 3x Mind Crush, 1x The Creator, 1x Granmarg the Rock Monarch, 1x Ancient Gear Golem, 1x Blade Knight, 
@@ -29,4 +30,5 @@ Gift:3x Polymerization, 3x Mind Crush, 1x The Creator, 1x Granmarg the Rock Mona
 1x Grandmaster of the Six Samurai, 1x Diabolos, King of the Abyss, 2x Summoner's Art, 1x Test Tiger, 1x D.D. Assailant,
 1x Goldd, Wu-Lord of Dark World, 1x Arcana Force EX - The Dark Ruler, 1x Plaguespreader Zombie, 1x Koa'ki Meiru Drago, 
 1x Necro Gardna, 1x Ancient Fairy Dragon, 1x United We Stand, 1x Preparation of Rites, 3x Dawn of the Herald, 1x Scrap Archfiend, 2x Droll&LockBird,
-2x Tanngnjostr of the Nordic Beasts
+2x Tanngnjostr of the Nordic Beasts, 1x Debunk
+
