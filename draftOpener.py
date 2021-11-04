@@ -104,11 +104,12 @@ draftSets = ["Legend of Blue Eyes White Dragon", "Metal Raiders", "Spell Ruler",
              "Gladiator's Assault", "Phantom Darkness", "Light of Destruction", "The Duelist Genesis",
              "Crossroads of Chaos", "Crimson Crisis", "Raging Battle", "Ancient Prophecy",
              "Stardust Overdrive", "Absolute Powerforce", "The Shining Darkness", "Duelist Revolution",
-             "Starstrike Blast", "Storm of Ragnarok", "Extreme Victory",
+             "Starstrike Blast", "Storm of Ragnarok", "Extreme Victory", "Generation Force",
              "Dark Beginning 1", "Dark Beginning 2", "Dark Revelation Volume 1",
              "Dark Revelation Volume 2", "Dark Revelation Volume 3", "Dark Revelation Volume 4",
              "Hidden Arsenal", "Hidden Arsenal 2", "Hidden Arsenal 3", "Hidden Arsenal 4: Trishula's Triumph",
-             "Gold Series", "Dark Legends", "Retro Pack", "Gold Series 2009", "Retro Pack 2", "Gold Series 3"]
+             "Gold Series", "Dark Legends", "Retro Pack", "Gold Series 2009", "Retro Pack 2", "Gold Series 3",
+             "Gold Series 4: Pyramids Edition"]
 
 debug = False
 
