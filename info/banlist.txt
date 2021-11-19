@@ -17,9 +17,9 @@ Jain, Lightsworn Paladin, Psi-Impulse, Skill Drain, Forced Back, Black Rose Drag
 Stardust Dragon, Caius the Shadow Monarch, Aqua Madoor, Infernity Break, Brionac, Dragon of the Ice Barrier, Mezuki, Amazoness Village,
 Call of the Haunted, Offering to the Snake Deity, Fiendish Chain, Instant Fusion, Pot of Duality, Great Shogun Shien, Legendary Six Samurai - Shi En, 
 Upstart Goblin, Grandmaster of the Six Samurai, Gozen Match, Gladiator Beast War Chariot, Legendary Six Samurai - Mizuho, Shadow-Imprisoning Mirror,
-Gold Sarcophagus, Pot of Avarice, Red Screen, Lonefire Blossom, Rivalry of Warlords
+Gold Sarcophagus, Pot of Avarice, Red Screen, Lonefire Blossom, Rivalry of Warlords, One Day of Peace, Skyscraper, Hope for Escape
 
-Semi:Limit Reverse
+Semi:Limit Reverse, E - Emergency Call
 
 Limited: Time Seal, 4-Starred Ladybug of Doom, Ekibyo Drakmord, Night Assailant, Upstart Goblin, Tsukuyomi, Doom Dozer, Rush Recklessly, 
 Masked Dragon, Reasoning, Apprentice Magician, Blackwing - Bora the Spear, Blackwing - Kalut the Moon Shadow
@@ -31,5 +31,5 @@ Gift:3x Polymerization, 3x Mind Crush, 1x The Creator, 1x Granmarg the Rock Mona
 1x Grandmaster of the Six Samurai, 1x Diabolos, King of the Abyss, 2x Summoner's Art, 1x Test Tiger, 1x D.D. Assailant,
 1x Goldd, Wu-Lord of Dark World, 1x Arcana Force EX - The Dark Ruler, 1x Plaguespreader Zombie, 1x Koa'ki Meiru Drago, 
 1x Necro Gardna, 1x Ancient Fairy Dragon, 1x United We Stand, 1x Preparation of Rites, 3x Dawn of the Herald, 1x Scrap Archfiend, 2x Droll&LockBird,
-2x Tanngnjostr of the Nordic Beasts, 1x Debunk, 1x Vision HERO Trinity
+2x Tanngnjostr of the Nordic Beasts, 1x Debunk, 1x Vision HERO Trinity, 1x Wind-up Factory
 
