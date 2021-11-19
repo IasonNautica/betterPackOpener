@@ -9,7 +9,8 @@
              "Gladiator's Assault", "Phantom Darkness", "Light of Destruction", "The Duelist Genesis",
              "Crossroads of Chaos", "Crimson Crisis", "Raging Battle", "Ancient Prophecy",
              "Stardust Overdrive", "Absolute Powerforce", "The Shining Darkness", "Duelist Revolution",
-             "Starstrike Blast", "Storm of Ragnarok", "Extreme Victory", "Generation Force", "Photon Shockwave"
+             "Starstrike Blast", "Storm of Ragnarok", "Extreme Victory", "Generation Force", "Photon Shockwave",
+             "Order of Chaos"
              
              "Dark Beginning 1", "Dark Beginning 2", "Dark Revelation Volume 1"
              "Dark Revelation Volume 2", "Dark Revelation Volume 3", "Dark Revelation Volume 4"
