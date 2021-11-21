@@ -20,6 +20,6 @@
              8 Packs:             
              "Hidden Arsenal", "Hidden Arsenal 2", "Hidden Arsenal 3", "Hidden Arsenal 4", "Hidden Arsenal 5"
              5 Packs:
-             "Gold Series", "Gold Series 2009", "Gold Series 3"
+             "Gold Series", "Gold Series 2009", "Gold Series 3", "Gold Series 4"
              
             
